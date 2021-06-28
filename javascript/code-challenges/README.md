@@ -1,4 +1,4 @@
-# Code Challenges
+<!-- # Code Challenges
 
 Part of growing as a programmer is to practice, practice, practice. Throughout this course, you will complete a set of daily code challenges. Each set will contain up to ten problems.
 
@@ -24,4 +24,29 @@ You can see the results of your tests online in the "Actions" tab of your reposi
 
 ## Assignment Submission
 
-When you finish the assignment each day, make a new pull request from your daily challenge branch to your master branch and submit the PR URL in Canvas. You can submit a link to a pull request even if the pull request is closed.
+When you finish the assignment each day, make a new pull request from your daily challenge branch to your master branch and submit the PR URL in Canvas. You can submit a link to a pull request even if the pull request is closed. -->
+ # Data Structures and Algorithms
+
+## Language: `JavaScript`
+
+### Folder and Challenge Setup
+
+## Challenges List
+
+## Code Challenges table contents:
+
+| class#      | Code Challenge | Link     |
+| :---        |    :----:   |          ---: |
+| 1      | reverseArray       |     |
+| 2   |          |        |
+| 3   |          |        |
+| 4   |          |        |
+| 5   |          |        |
+| 6   |          |        |
+| 7   |          |        |
+| 8   |          |        |
+| 9   |          |        |
+| 10   |          |        |
+
+
+ 
