@@ -37,7 +37,7 @@ When you finish the assignment each day, make a new pull request from your daily
 
 | class#      | Code Challenge | Link     |
 | :---        |    :----:   |          ---: |
-| 1      | reverseArray       |     |
+| 1      | reverseArray       |   [Link](https://github.com/En-ZUH/data-structures-and-algorithms-401/tree/main/javascript/code-challenges/challeng01)  |
 | 2   |          |        |
 | 3   |          |        |
 | 4   |          |        |
