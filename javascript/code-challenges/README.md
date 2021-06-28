@@ -29,12 +29,8 @@ When you finish the assignment each day, make a new pull request from your daily
 
 ## Language: `JavaScript`
 
-## Folder and Challenge Setup
-
 ## Challenges List
-
-## Code Challenges table contents:
-
+ 
 | class#      | Code Challenge | Link     |
 | :---        |    :----:   |          ---: |
 | 1      | reverseArray       |   [Link](https://github.com/En-ZUH/data-structures-and-algorithms-401/tree/main/javascript/code-challenges/challeng01)  |
