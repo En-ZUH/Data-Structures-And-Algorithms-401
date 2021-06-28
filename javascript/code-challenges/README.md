@@ -29,7 +29,7 @@ When you finish the assignment each day, make a new pull request from your daily
 
 ## Language: `JavaScript`
 
-### Folder and Challenge Setup
+## Folder and Challenge Setup
 
 ## Challenges List
 
