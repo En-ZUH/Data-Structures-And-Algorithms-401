@@ -25,30 +25,30 @@ describe('Test insert, include and toString methods', () => {
         expect(list.length).toEqual(length);
     });
 
-    it('Test returning true if the value exists in the linked list', () => {
-        list.insert(1);
-        list.insert(2);
-        list.insert(3);
-        list.insert(4);
-        let exists = list.includes(4);
-        expect(exists).toEqual(true);
-    });
+    // it('Test returning true if the value exists in the linked list', () => {
+    //     list.insert(1);
+    //     list.insert(2);
+    //     list.insert(3);
+    //     list.insert(4);
+    //     let exists = list.includes(4);
+    //     expect(exists).toEqual(true);
+    // });
 
-    it(`Test returning false if the value doesn't exist in the linked list`, () => {
-        list.insert(1);
-        list.insert(2);
-        list.insert(3);
-        list.insert(4);
-        let exists = list.includes(10);
-        expect(exists).toBeFalsy;
-    });
+    // it(`Test returning false if the value doesn't exist in the linked list`, () => {
+    //     list.insert(1);
+    //     list.insert(2);
+    //     list.insert(3);
+    //     list.insert(4);
+    //     let exists = list.includes(10);
+    //     expect(exists).toBeFalsy;
+    // });
 
-    it('should find a value anywhere in the linked list', () => {
-        list.insert(25);
-        expect(list.includes(25)).toBeTruthy();
-        expect(list.includes(250)).toBeFalsy();
-        expect(list.includes(2500)).toBeFalsy();
-    });
+    // it('should find a value anywhere in the linked list', () => {
+    //     list.insert(25);
+    //     expect(list.includes(25)).toBeTruthy();
+    //     expect(list.includes(250)).toBeFalsy();
+    //     expect(list.includes(2500)).toBeFalsy();
+    // });
     it('Test returning all values in LL as a string', () => {
 
         list.insert(10);
