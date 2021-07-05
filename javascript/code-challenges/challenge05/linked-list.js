@@ -15,6 +15,7 @@ class LinkedList {
   }
 
 
+
   insert(value) {
     try {
 
@@ -69,7 +70,6 @@ class LinkedList {
       console.log(`Error: toString method`, error);
     }
   }
-
 
 }
 module.exports = LinkedList;
