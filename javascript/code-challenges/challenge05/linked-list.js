@@ -1,4 +1,5 @@
 'use strict';
+//ch5
 
 class Node {
   constructor(value, next = null) {
@@ -12,6 +13,7 @@ class LinkedList {
   constructor() {
     this.head = null;
   }
+
 
 
   insert(value) {
@@ -50,6 +52,7 @@ class LinkedList {
     }
   }
 
+
   toString() {
     try {
       let linkedList = '';
@@ -66,67 +69,24 @@ class LinkedList {
     } catch (error) {
       console.log(`Error: toString method`, error);
     }
-
   }
 
-  append(value) {
-    var newNode = new Node(value);
-    this.length++;
-    if (!this.head) {
-      this.head = newNode;
-    } else {
-      let lastNode = this.head;
-      while (lastNode.next) {
-        lastNode = lastNode.next;
+  kthFromEnd(k) {
+    let looper = this.head;
+    let position = this.length - 1 - k;
+    let index = 0;
+    while (looper) {
+      if (position === index) {
+        return looper.value;
       }
-      lastNode.next = newNode;
+      looper = looper.next();
+      index++;
     }
-    return this;
+    return 'Exception';
   }
 
 
-
-
-  insertAfter(value, newVal) {
-    let node = new Node(newVal);
-    let current = this.head;
-    while (current) {
-      if (current.value === value) {
-        this.length++;
-        let temp = current.next;
-        current.next = node;
-        node.next = temp;
-        return;
-      }
-      current = current.next;
-    }
-    return 'exception';
-  }
-
-  insertBefore(value, newVal) {
-    let newNode = new Node(newVal);
-    if (this.head) {
-      let current = this.head;
-      if (current.value === value) {
-        newNode.next = current;
-        this.head = newNode;
-        return;
-      }
-      while (current.next) {
-        if (current.next.value === value) {
-          let temp = current.next;
-          current.next = newNode;
-          newNode.next = temp;
-
-          return current.value;
-        }
-        current = current.next;
-      }
-    } else {
-      return `Exception`;
-    }
-
-  }
 }
 module.exports = LinkedList;
 
+s
