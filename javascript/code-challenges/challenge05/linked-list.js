@@ -1,4 +1,5 @@
 'use strict';
+//ch5
 
 class Node {
   constructor(value, next = null) {
@@ -12,7 +13,7 @@ class LinkedList {
   constructor() {
     this.head = null;
   }
- 
+
 
 
   insert(value) {
@@ -69,7 +70,7 @@ class LinkedList {
       console.log(`Error: toString method`, error);
     }
   }
- 
+
 }
 module.exports = LinkedList;
 
