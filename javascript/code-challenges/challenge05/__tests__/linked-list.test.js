@@ -59,6 +59,64 @@ describe('Test insert, include and toString methods', () => {
 
 });
 
+describe('Test append, insertAfter, insertBefore methods', () => {
+    it('Can successfully add a node to the end of the linked list', () => {
+
+        list.insert(10);
+        list.insert(20);
+        list.insert(30);
+        list.append(0);
+
+        expect(list.toString()).toEqual('{ 30 } -> { 20 } -> { 10 } -> { enas } -> { 20 } -> { 10 } -> { 25 } -> { 4 } -> { 3 } -> { 2 } -> { 1 } -> { 4 } -> { 3 } -> { 2 } -> { 1 } -> { 100 } -> { 10 } -> { 1 } -> { 7 } -> { 5 } -> { 10 } -> {0} -> NULL');
+    });
+
+    it('Can successfully add multiple nodes to the end of a linked list.', () => {
+
+        list.append(10);
+        list.append(20);
+        list.append(30);
+        list.append(40);
+
+        expect(list.toString()).toEqual('{ 30 } -> { 20 } -> { 10 } -> { enas } -> { 20 } -> { 10 } -> { 25 } -> { 4 } -> { 3 } -> { 2 } -> { 1 } -> { 4 } -> { 3 } -> { 2 } -> { 1 } -> { 100 } -> { 10 } -> { 1 } -> { 7 } -> { 5 } -> { 10 } -> { 0 } -> { 10 } -> { 20 } -> { 30 } -> {40} -> NULL');
+    });
+
+    test('Can successfully insert a node before a node located i the middle of a linked list.', () => {
+        list.insert('first');
+        list.insertBefore('enas', 'name');
+
+        expect(list.toString()).toEqual('{ first } -> { 30 } -> { 20 } -> { 10 } -> { name } -> { enas } -> { 20 } -> { 10 } -> { 25 } -> { 4 } -> { 3 } -> { 2 } -> { 1 } -> { 4 } -> { 3 } -> { 2 } -> { 1 } -> { 100 } -> { 10 } -> { 1 } -> { 7 } -> { 5 } -> { 10 } -> { 0 } -> { 10 } -> { 20 } -> { 30 } -> {40} -> NULL');
+
+    });
+
+    test('Can successfully insert a node before the first node of a linked list.', () => {
+
+        list.insertBefore('first', 'zuhair');
+
+
+
+        expect(list.toString()).toEqual('{ zuhair } -> { first } -> { 30 } -> { 20 } -> { 10 } -> { name } -> { enas } -> { 20 } -> { 10 } -> { 25 } -> { 4 } -> { 3 } -> { 2 } -> { 1 } -> { 4 } -> { 3 } -> { 2 } -> { 1 } -> { 100 } -> { 10 } -> { 1 } -> { 7 } -> { 5 } -> { 10 } -> { 0 } -> { 10 } -> { 20 } -> { 30 } -> {40} -> NULL');
+
+    });
+
+    test('Can successfully insert a node after a node located i the middle of a linked list.', () => {
+
+        list.insertAfter('enas', 'zuhair');
+
+        expect(list.toString()).toEqual('{ zuhair } -> { first } -> { 30 } -> { 20 } -> { 10 } -> { name } -> { enas } -> { zuhair } -> { 20 } -> { 10 } -> { 25 } -> { 4 } -> { 3 } -> { 2 } -> { 1 } -> { 4 } -> { 3 } -> { 2 } -> { 1 } -> { 100 } -> { 10 } -> { 1 } -> { 7 } -> { 5 } -> { 10 } -> { 0 } -> { 10 } -> { 20 } -> { 30 } -> {40} -> NULL');
+
+    });
+
+    it('Can successfully insert a node after the last node of the linked list', () => {
+
+        list.append('final');
+
+
+        expect(list.toString()).toEqual('{ zuhair } -> { first } -> { 30 } -> { 20 } -> { 10 } -> { name } -> { enas } -> { zuhair } -> { 20 } -> { 10 } -> { 25 } -> { 4 } -> { 3 } -> { 2 } -> { 1 } -> { 4 } -> { 3 } -> { 2 } -> { 1 } -> { 100 } -> { 10 } -> { 1 } -> { 7 } -> { 5 } -> { 10 } -> { 0 } -> { 10 } -> { 20 } -> { 30 } -> { 40 } -> {final} -> NULL');
+    });
+
+});
+
+
 
 
 
