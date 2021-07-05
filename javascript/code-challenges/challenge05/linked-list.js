@@ -71,21 +71,7 @@ class LinkedList {
     }
   }
 
-  kthFromEnd(k) {
-    let looper = this.head;
-    let position = this.length - 1 - k;
-    let index = 0;
-    while (looper) {
-      if (position === index) {
-        return looper.value;
-      }
-      looper = looper.next();
-      index++;
-    }
-    return 'Exception';
-  }
-
-
+  
 }
 module.exports = LinkedList;
 
