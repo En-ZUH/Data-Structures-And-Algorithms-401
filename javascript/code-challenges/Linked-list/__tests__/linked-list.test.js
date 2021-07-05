@@ -116,53 +116,60 @@ describe('Test append, insertAfter, insertBefore methods', () => {
 
 });
 
-describe('test kthFromEnd(k) method', () => {
+describe('Test append, insertAfter, insertBefore methods', () => {
+    it('Can successfully add a node to the end of the linked list', () => {
 
-    test('Return Exception if k is negative', () => {
-        let ll = new LinkedList().append(5).append(10);
-        expect(ll.kthFromEnd(-2)).toEqual('Exception');
+        list.insert(10);
+        list.insert(20);
+        list.insert(30);
+        list.append(0);
+
+        expect(list.toString()).toEqual('{ 30 } -> { 20 } -> { 10 } -> { omar } -> { 20 } -> { 10 } -> { 25 } -> { 4 } -> { 3 } -> { 2 } -> { 1 } -> { 4 } -> { 3 } -> { 2 } -> { 1 } -> { 100 } -> { 10 } -> { 1 } -> { 7 } -> { 5 } -> { 10 } -> {0} -> NULL');
     });
 
-    test('Return Exception if k is not an integer', () => {
-        let ll = new LinkedList().append(5).append(10);
-        expect(ll.kthFromEnd('omar')).toEqual('Exception');
-    });
+    it('Can successfully add multiple nodes to the end of a linked list.', () => {
 
-    test('Return Exception when k is greater than the length of the linked list', () => {
-        let list = new LinkedList();
-        expect(list.kthFromEnd(5)).toEqual('Exception');
-    });
-
-
-    it('Return the head value when k and the length of the list are the same', () => {
-        let list = new LinkedList().append(2).append(4).append(6).append(8).append(10);
-        expect(list.kthFromEnd(5)).toEqual(2);
-    });
-
-
-    it('Return a value when the linked list is of a size 1', () => {
-        let list = new LinkedList();
         list.append(10);
-        expect(list.kthFromEnd(0)).toEqual(10);
-        expect(list.kthFromEnd(1)).toEqual('Exception');
+        list.append(20);
+        list.append(30);
+        list.append(40);
+
+        expect(list.toString()).toEqual('{ 30 } -> { 20 } -> { 10 } -> { omar } -> { 20 } -> { 10 } -> { 25 } -> { 4 } -> { 3 } -> { 2 } -> { 1 } -> { 4 } -> { 3 } -> { 2 } -> { 1 } -> { 100 } -> { 10 } -> { 1 } -> { 7 } -> { 5 } -> { 10 } -> { 0 } -> { 10 } -> { 20 } -> { 30 } -> {40} -> NULL');
     });
 
+    test('Can successfully insert a node before a node located i the middle of a linked list.', () => {
+        list.insert('first');
+        list.insertBefore('omar', 'name');
 
-    test('find kth value in a linked list', () => {
-        let list = new LinkedList().append(2).append(4).append(6).append(8);
-        expect(list.kthFromEnd(0)).toEqual(8);
-        expect(list.kthFromEnd(1)).toEqual(6);
-        expect(list.kthFromEnd(2)).toEqual(4);
-        expect(list.kthFromEnd(3)).toEqual(2);
+        expect(list.toString()).toEqual('{ first } -> { 30 } -> { 20 } -> { 10 } -> { name } -> { omar } -> { 20 } -> { 10 } -> { 25 } -> { 4 } -> { 3 } -> { 2 } -> { 1 } -> { 4 } -> { 3 } -> { 2 } -> { 1 } -> { 100 } -> { 10 } -> { 1 } -> { 7 } -> { 5 } -> { 10 } -> { 0 } -> { 10 } -> { 20 } -> { 30 } -> {40} -> NULL');
+
     });
 
+    test('Can successfully insert a node before the first node of a linked list.', () => {
 
-    test('Return a value when k is not at the end, but somewhere in the middle of the linked list', () => {
-        let list = new LinkedList().append(1).append(5).append(8).append(10).append(12);
-        expect(list.kthFromEnd(2)).toEqual(8);
+        list.insertBefore('first', 'oebitw');
+
+
+
+        expect(list.toString()).toEqual('{ oebitw } -> { first } -> { 30 } -> { 20 } -> { 10 } -> { name } -> { omar } -> { 20 } -> { 10 } -> { 25 } -> { 4 } -> { 3 } -> { 2 } -> { 1 } -> { 4 } -> { 3 } -> { 2 } -> { 1 } -> { 100 } -> { 10 } -> { 1 } -> { 7 } -> { 5 } -> { 10 } -> { 0 } -> { 10 } -> { 20 } -> { 30 } -> {40} -> NULL');
+
     });
 
+    test('Can successfully insert a node after a node located i the middle of a linked list.', () => {
 
+        list.insertAfter('omar', 'ewies');
+
+        expect(list.toString()).toEqual('{ oebitw } -> { first } -> { 30 } -> { 20 } -> { 10 } -> { name } -> { omar } -> { ewies } -> { 20 } -> { 10 } -> { 25 } -> { 4 } -> { 3 } -> { 2 } -> { 1 } -> { 4 } -> { 3 } -> { 2 } -> { 1 } -> { 100 } -> { 10 } -> { 1 } -> { 7 } -> { 5 } -> { 10 } -> { 0 } -> { 10 } -> { 20 } -> { 30 } -> {40} -> NULL');
+
+    });
+
+    it('Can successfully insert a node after the last node of the linked list', () => {
+
+        list.append('final');
+
+
+        expect(list.toString()).toEqual('{ oebitw } -> { first } -> { 30 } -> { 20 } -> { 10 } -> { name } -> { omar } -> { ewies } -> { 20 } -> { 10 } -> { 25 } -> { 4 } -> { 3 } -> { 2 } -> { 1 } -> { 4 } -> { 3 } -> { 2 } -> { 1 } -> { 100 } -> { 10 } -> { 1 } -> { 7 } -> { 5 } -> { 10 } -> { 0 } -> { 10 } -> { 20 } -> { 30 } -> { 40 } -> {final} -> NULL');
+    });
 
 });
 
