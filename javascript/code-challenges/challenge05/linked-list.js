@@ -1,4 +1,5 @@
 'use strict';
+//ch5
 
 class Node {
   constructor(value, next = null) {
