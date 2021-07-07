@@ -1,0 +1,18 @@
+
+
+ is_palindromic_linked_list(head) {
+
+    let front = head;
+
+    const traverse = (node) => {
+        if (!node) return true;
+       
+        const reverse = traverse(node.next);
+        
+        const valChecker = front.value == node.value;
+        front = front.next;
+        return reverse && valChecker;
+    }
+
+    return traverse(head)
+};

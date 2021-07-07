@@ -1,6 +1,5 @@
 'use strict';
 const LinkedList = require('../linked-list');
-
 let list = new LinkedList();
 
 describe('Test insert, include and toString methods', () => {
@@ -53,13 +52,11 @@ describe('Test insert, include and toString methods', () => {
 
         list.insert(10);
         list.insert(20);
-        list.insert('Enas');
-        expect(list.toString()).toEqual('{ Enas } -> { 20 } -> { 10 } -> { 25 } -> { 4 } -> { 3 } -> { 2 } -> { 1 } -> { 4 } -> { 3 } -> { 2 } -> { 1 } -> { 100 } -> { 10 } -> { 1 } -> { 7 } -> { 5 } -> {10} -> NULL');
+        list.insert('enas');
+        expect(list.toString()).toEqual('{ enas } -> { 20 } -> { 10 } -> { 25 } -> { 4 } -> { 3 } -> { 2 } -> { 1 } -> { 4 } -> { 3 } -> { 2 } -> { 1 } -> { 100 } -> { 10 } -> { 1 } -> { 7 } -> { 5 } -> {10} -> NULL');
     });
 
 });
-
-
 
 describe('Test append, insertAfter, insertBefore methods', () => {
     it('Can successfully add a node to the end of the linked list', () => {
@@ -102,9 +99,9 @@ describe('Test append, insertAfter, insertBefore methods', () => {
 
     test('Can successfully insert a node after a node located i the middle of a linked list.', () => {
 
-        list.insertAfter('enas', 'ewies');
+        list.insertAfter('enas', 'zuhair');
 
-        expect(list.toString()).toEqual('{ bataineh } -> { first } -> { 30 } -> { 20 } -> { 10 } -> { name } -> { enas } -> { ewies } -> { 20 } -> { 10 } -> { 25 } -> { 4 } -> { 3 } -> { 2 } -> { 1 } -> { 4 } -> { 3 } -> { 2 } -> { 1 } -> { 100 } -> { 10 } -> { 1 } -> { 7 } -> { 5 } -> { 10 } -> { 0 } -> { 10 } -> { 20 } -> { 30 } -> {40} -> NULL');
+        expect(list.toString()).toEqual('{ bataineh } -> { first } -> { 30 } -> { 20 } -> { 10 } -> { name } -> { enas } -> { zuhair } -> { 20 } -> { 10 } -> { 25 } -> { 4 } -> { 3 } -> { 2 } -> { 1 } -> { 4 } -> { 3 } -> { 2 } -> { 1 } -> { 100 } -> { 10 } -> { 1 } -> { 7 } -> { 5 } -> { 10 } -> { 0 } -> { 10 } -> { 20 } -> { 30 } -> {40} -> NULL');
 
     });
 
@@ -113,7 +110,7 @@ describe('Test append, insertAfter, insertBefore methods', () => {
         list.append('final');
 
 
-        expect(list.toString()).toEqual('{ bataineh } -> { first } -> { 30 } -> { 20 } -> { 10 } -> { name } -> { enas } -> { ewies } -> { 20 } -> { 10 } -> { 25 } -> { 4 } -> { 3 } -> { 2 } -> { 1 } -> { 4 } -> { 3 } -> { 2 } -> { 1 } -> { 100 } -> { 10 } -> { 1 } -> { 7 } -> { 5 } -> { 10 } -> { 0 } -> { 10 } -> { 20 } -> { 30 } -> { 40 } -> {final} -> NULL');
+        expect(list.toString()).toEqual('{ bataineh } -> { first } -> { 30 } -> { 20 } -> { 10 } -> { name } -> { enas } -> { zuhair } -> { 20 } -> { 10 } -> { 25 } -> { 4 } -> { 3 } -> { 2 } -> { 1 } -> { 4 } -> { 3 } -> { 2 } -> { 1 } -> { 100 } -> { 10 } -> { 1 } -> { 7 } -> { 5 } -> { 10 } -> { 0 } -> { 10 } -> { 20 } -> { 30 } -> { 40 } -> {final} -> NULL');
     });
 
 });
@@ -164,5 +161,5 @@ describe('test kthFromEnd(k) method', () => {
         let list = new LinkedList().append(1).append(5).append(8).append(10).append(12);
         expect(list.kthFromEnd(2)).toEqual(8);
     });
-});
 
+});

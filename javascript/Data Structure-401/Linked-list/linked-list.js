@@ -1,6 +1,7 @@
 'use strict';
 
 
+
 class Node {
   constructor(value, next = null) {
     this.value = value;
@@ -8,15 +9,13 @@ class Node {
   }
 }
 
-
 class LinkedList {
   constructor() {
     this.head = null;
   }
 
-
-
   insert(value) {
+
     try {
 
       if (!value) {
@@ -31,7 +30,7 @@ class LinkedList {
     }
   }
 
-  include(value) {
+  includes(value) {
     try {
 
       if (!value) {
@@ -52,7 +51,6 @@ class LinkedList {
     }
   }
 
-
   toString() {
     try {
       let linkedList = '';
@@ -70,6 +68,7 @@ class LinkedList {
       console.log(`Error: toString method`, error);
     }
   }
+
 
   append(value) {
     var newNode = new Node(value);
@@ -127,19 +126,33 @@ class LinkedList {
   }
 
   kthFromEnd(k) {
-    let looper = this.head;
-    let position = this.length - 1 - k;
-    let index = 0;
-    while (looper) {
-      if (position === index) {
-        return looper.value;
-      }
-      looper = looper.next();
-      index++;
+    if (typeof k !== typeof 1 || k < 0) {
+      return 'Exception';
     }
-    return 'Exception';
+    let index = 0;
+    if (this.head) {
+      let current = this.head;
+      index++;
+      while (current.next) {
+        current = current.next;
+        index++;
+      }
+      if (index === 1) {
+        return (k === 0) ? current.value : 'Exception';
+      }
+      if (k <= index) {
+        current = this.head;
+        for (let i = 1; i < index - k; i++) {
+          current = current.next;
+        }
+        return current.value;
+      }
+    } else {
+      return 'Exception';
+    }
   }
-
 }
-module.exports = LinkedList;
 
+
+
+module.exports = LinkedList;
