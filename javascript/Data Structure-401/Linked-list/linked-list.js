@@ -1,7 +1,5 @@
 'use strict';
 
-
-
 class Node {
   constructor(value, next = null) {
     this.value = value;
@@ -9,7 +7,7 @@ class Node {
   }
 }
 
-class LinkedList {
+class Linked_List {
   constructor() {
     this.head = null;
   }
@@ -155,4 +153,4 @@ class LinkedList {
 
 
 
-module.exports = LinkedList;
+module.exports = Linked_List;
