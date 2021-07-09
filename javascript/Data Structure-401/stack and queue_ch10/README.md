@@ -30,3 +30,5 @@
 - `peek()`: return the first added without removing it.
 - `size()`: return the size of the queue.
 - `isEmpty()`: checks whether if the the queue is empty or not.
+
+![img](https://images.saymedia-content.com/.image/t_share/MTc0NDc5MjM2NzY0MDE4MzEw/an-example-of-creating-and-using-stack-and-queue-in-c.png)
