@@ -2,8 +2,8 @@
 
 ## Challenge
 
-[stack-and-queue.js](https://github.com/En-ZUH/data-structures-and-algorithms-401/blob/main/javascript/Data%20Structure-401/stack%20and%20queue_ch10/stack-and-queue.js)
-[stack-and-queue.test.js](https://github.com/En-ZUH/data-structures-and-algorithms-401/blob/main/javascript/Data%20Structure-401/stack%20and%20queue_ch10/_tests_/stack-and-queue.test.js)
+* [stack-and-queue.js](https://github.com/En-ZUH/data-structures-and-algorithms-401/blob/main/javascript/Data%20Structure-401/stack%20and%20queue_ch10/stack-and-queue.js)
+* [stack-and-queue.test.js](https://github.com/En-ZUH/data-structures-and-algorithms-401/blob/main/javascript/Data%20Structure-401/stack%20and%20queue_ch10/_tests_/stack-and-queue.test.js)
 
  In this challenge we will write the code for both queue and stack data structures.
 
