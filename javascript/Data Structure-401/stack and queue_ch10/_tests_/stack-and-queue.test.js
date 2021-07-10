@@ -10,7 +10,7 @@ let node4 = new data.Queue();
 
 // Testing Stack
 
-describe('Testing Stack', () => {
+xdescribe('Testing Stack', () => {
 
     it('Can successfully push onto a stack', () => {
         node1.push('50');
@@ -82,7 +82,7 @@ describe('Testing Stack', () => {
 
 //Testing Queue _________________________________________________
 
-describe('Testing Queue', () => {
+xdescribe('Testing Queue', () => {
 
     it('Can successfully enqueue into a queue', () => {
         node3.enqueue('A');

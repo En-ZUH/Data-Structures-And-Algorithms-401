@@ -3,7 +3,7 @@
 const isPalindrome = require('../palindrome');
 const Linkedlist = require('../../linked-list');
 
-let list11 = new Linkedlist.Linked_list;
+let list11 = new Linkedlist();
 
 
 xdescribe('palindrome linked list', () => {
