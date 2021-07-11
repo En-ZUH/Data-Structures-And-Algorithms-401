@@ -1,5 +1,14 @@
 # Stack Queue Pseudo
 
+ ## White Board 
+
+![img](whiteBoard1.jpg)
+
+![img](whiteBoard2.jpg)
+
+## Testing
+![img](pseudoTest.PNG)
+
 ## Approach & Efficiency
 
 * enqueue:
@@ -26,10 +35,4 @@
   * `peek()`: return the first added without removing it.
   * `empty()`: checks whether if the the queue is empty or not.
 
- 
 
-![img](whiteBoard1.jpg)
-
-![img](whiteBoard1.jpg)
-
-![img](pseudoTest.PNG)
