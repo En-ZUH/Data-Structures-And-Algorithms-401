@@ -2,7 +2,7 @@
 const LinkedList = require('../linked-list');
 let list = new LinkedList();
 
-describe('Test insert, include and toString methods', () => {
+xdescribe('Test insert, include and toString methods', () => {
     it('Test instantiating an empty linked list', () => {
         expect(list.head).toEqual(null);
     });
@@ -58,7 +58,7 @@ describe('Test insert, include and toString methods', () => {
 
 });
 
-describe('Test append, insertAfter, insertBefore methods', () => {
+xdescribe('Test append, insertAfter, insertBefore methods', () => {
     it('Can successfully add a node to the end of the linked list', () => {
 
         list.insert(10);
@@ -116,7 +116,7 @@ describe('Test append, insertAfter, insertBefore methods', () => {
 });
 
 
-describe('test kthFromEnd(k) method', () => {
+xdescribe('test kthFromEnd(k) method', () => {
 
     test('Return Exception if k is negative', () => {
         let ll = new LinkedList().append(5).append(10);
