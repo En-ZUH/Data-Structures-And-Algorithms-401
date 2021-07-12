@@ -1,6 +1,6 @@
 # Stack Queue Pseudo
 
- ## White Board 
+ ## Whiteboard 
 
 ![img](whiteBoard1.jpg)
 
