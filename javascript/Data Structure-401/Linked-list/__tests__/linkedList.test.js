@@ -1,8 +1,12 @@
 'use strict';
+<<<<<<< HEAD:javascript/Data Structure-401/Linked-list/__tests__/linkedList.test.js
+const LinkedList = require('../linkedList');
+=======
 const LinkedList = require('../linked-list');
+>>>>>>> ae36fc885267d3df63368197db57b2140f4d6f2a:javascript/Data Structure-401/Linked-list/__tests__/linked-list.test.js
 let list = new LinkedList();
 
-xdescribe('Test insert, include and toString methods', () => {
+describe('Test insert, include and toString methods', () => {
     it('Test instantiating an empty linked list', () => {
         expect(list.head).toEqual(null);
     });
@@ -58,7 +62,7 @@ xdescribe('Test insert, include and toString methods', () => {
 
 });
 
-xdescribe('Test append, insertAfter, insertBefore methods', () => {
+describe('Test append, insertAfter, insertBefore methods', () => {
     it('Can successfully add a node to the end of the linked list', () => {
 
         list.insert(10);
@@ -116,7 +120,7 @@ xdescribe('Test append, insertAfter, insertBefore methods', () => {
 });
 
 
-xdescribe('test kthFromEnd(k) method', () => {
+describe('test kthFromEnd(k) method', () => {
 
     test('Return Exception if k is negative', () => {
         let ll = new LinkedList().append(5).append(10);
