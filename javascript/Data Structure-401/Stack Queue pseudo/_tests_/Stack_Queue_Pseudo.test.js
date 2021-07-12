@@ -8,7 +8,7 @@ let value_1 = 10;
 let value_2 = 20;
 let value_3 = 30;
 
-describe('PseudoQueue', () => {
+xdescribe('PseudoQueue', () => {
 
     it('Edge Case', () => {
 
