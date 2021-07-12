@@ -45,9 +45,7 @@ Linked List can be defined as collection of objects called nodes that are random
 
 ## Testing
 ![img](kthTest.PNG)
-=======
-****
-## Testing
+ 
 
 ![img](test.PNG)
->>>>>>> ae36fc885267d3df63368197db57b2140f4d6f2a
+ 
