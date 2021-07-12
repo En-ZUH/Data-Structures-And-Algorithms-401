@@ -83,6 +83,7 @@ class LinkedList {
     return this;
   }
 
+  //insert
   insertAfter(value, newVal) {
     let node = new Node(newVal);
     let current = this.head;
