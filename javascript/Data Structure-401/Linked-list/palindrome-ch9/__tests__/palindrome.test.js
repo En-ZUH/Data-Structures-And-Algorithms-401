@@ -1,9 +1,9 @@
 'use strict';
 
 const isPalindrome = require('../palindrome');
-const Linkedlist = require('../../linked-list');
+const LinkedList = require('../../linkedList');
 
-let list11 = new Linkedlist.Linked_list;
+let list1 = new LinkedList();
 
 
 xdescribe('palindrome linked list', () => {
@@ -11,7 +11,7 @@ xdescribe('palindrome linked list', () => {
     it('should return true for palindrome list', () => {
 
 
-        list1.append(1); s
+        list1.append(1);
         list1.append(2);
         list1.append(2);
         list1.append(1);
