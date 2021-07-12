@@ -1,9 +1,5 @@
 'use strict';
-<<<<<<< HEAD:javascript/Data Structure-401/Linked-list/__tests__/linkedList.test.js
 const LinkedList = require('../linkedList');
-=======
-const LinkedList = require('../linked-list');
->>>>>>> ae36fc885267d3df63368197db57b2140f4d6f2a:javascript/Data Structure-401/Linked-list/__tests__/linked-list.test.js
 let list = new LinkedList();
 
 describe('Test insert, include and toString methods', () => {
