@@ -5,7 +5,7 @@ function isAlive() {
 }
 
 
-xdescribe('proof of life', () => {
+describe('proof of life', () => {
 
   it('lives', () => {
 
