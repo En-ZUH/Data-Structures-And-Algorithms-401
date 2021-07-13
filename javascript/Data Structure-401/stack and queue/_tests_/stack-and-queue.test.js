@@ -1,6 +1,6 @@
 'use strict';
 
-const data = require('../../Stack and queue /stack-and-queue');
+const data = require('../Stack and queue /stack-and-queue');
 
 let node1 = new data.Stack();
 let node2 = new data.Stack();
