@@ -72,6 +72,22 @@ class Binary_Tree {
         traverse(this.root);
         return array;
     }
+
+    //========================================================
+
+    findMaximumValue() {
+        let maximum = 0;
+        if (!this.root) {
+            throw new Error('Empty Tree');
+        }
+        let newArray = this.inOrder();
+        for (let index = 0; index < newArray.length; index++) {
+            if (maximum < newArray[index]) {
+                maximum = newArray[index];
+            }
+        }
+        return maximum;
+    }
 }
 //____________________________________________
 
@@ -80,7 +96,7 @@ class Binary_Search_Tree {
         this.root = root;
     }
 
-    Add(val) {
+    add(val) {
         let traverse = ((node) => {
             node = new Node(val);
             if (this.root === null) {
