@@ -12,30 +12,8 @@ class Binary_Tree {
     constructor(root = null) {
         this.root = root;
     }
-    //____________________________________________
-    // Traverse through the tree in the following order:
 
-    //Root -> Left -> Right
-    preOrder() {
-        let array = [];
 
-        let traverse = (node) => {
-
-            array.push(node.val);
-
-            if (node.left) {
-                traverse(node.left);
-            }
-
-            if (node.right) {
-                traverse(node.right);
-            }
-        };
-        traverse(this.root);
-        return array;
-    }
-    //____________________________________________
-    // Left ->Root-> Right
 
     inOrder() {
         let array = [];
@@ -53,27 +31,8 @@ class Binary_Tree {
         traverse(this.root);
         return array;
     }
-    //____________________________________________
-    // Left-> Right-> Root
 
-    postOrder() {
-        let array = [];
-        let traverse = (node) => {
 
-            if (node.left) {
-                traverse(node.left);
-            }
-
-            if (node.right) {
-                traverse(node.right);
-            }
-            array.push(node.val);
-        };
-        traverse(this.root);
-        return array;
-    }
-
-    //========================================================
 
     findMaximumValue() {
         let maximum = 0;
