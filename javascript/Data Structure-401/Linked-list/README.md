@@ -38,7 +38,7 @@ Linked List can be defined as collection of objects called nodes that are random
 * `.insertAfter` method: which add a new node with the given newValue immediately after the first value node.
 
 * `kthFromEnd` method:  which takes a number (k) as parameter and return the node’s value that is k from the end of the linked list.
-<<<<<<< HEAD
+ 
 
 ## Whiteboard (kth function)
 ![img](kth.jpg)
