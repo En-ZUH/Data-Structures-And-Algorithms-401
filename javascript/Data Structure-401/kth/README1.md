@@ -40,12 +40,8 @@ Linked List can be defined as collection of objects called nodes that are random
 * `kthFromEnd` method:  which takes a number (k) as parameter and return the node’s value that is k from the end of the linked list.
  
 
-<!-- ## Whiteboard (kth function)
-![img]()
+## Whiteboard (kth function)
+![img](kth.jpg)
 
 ## Testing
-![img](kthTest.PNG) -->
- 
-
-![img](test.PNG)
- 
+![img](kthTest.PNG)
