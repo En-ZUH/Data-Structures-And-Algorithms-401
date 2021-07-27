@@ -18,7 +18,7 @@ Linked List can be defined as collection of objects called nodes that are random
 
 ## API
 
-* `insert` method: space O(1) and time O(1) : it takes any value as an argument and adds a new node with that value to the head of the list with an O(1) Time performance.
+<!-- * `insert` method: space O(1) and time O(1) : it takes any value as an argument and adds a new node with that value to the head of the list with an O(1) Time performance.
 
 * `includes` method: space O(n) and time O(n) : it takes any value as an argument and returns a boolean result depending on whether that value exists as a Node’s value somewhere within the list.
 
@@ -36,7 +36,7 @@ Linked List can be defined as collection of objects called nodes that are random
 ****
 
 * `.insertAfter` method: which add a new node with the given newValue immediately after the first value node.
-
+ -->
 * `kthFromEnd` method:  which takes a number (k) as parameter and return the node’s value that is k from the end of the linked list.
  
 
