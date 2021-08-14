@@ -23,9 +23,9 @@ In this challenge we will write the code for binary tree and binary search tree 
 
 1. Binary Tree:
 
-   - `preOrder(root)`: method for traversing through the tree with following order: left node → Parent node → Right Node.
+   - `preOrder(root)`: method for traversing through the tree with following order: Parent node → left node → Right Node.
 
-   - `inOrder(root)`: method for traversing through the tree with following order: Parent node → left node → Right Node.
+   - `inOrder(root)`: method for traversing through the tree with following order: left node → Parent node → Right Node.
 
    - `postOrder(root)`: method for traversing through the tree with following order: left node → Right Node → Parent node.
 
