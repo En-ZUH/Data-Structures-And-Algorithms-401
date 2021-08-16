@@ -56,3 +56,5 @@ Write tests to prove the following functionality:
 4. `get(key)` method: it takes a key as an argument, Returns: Index in the collection for that key
 
  
+## Testing: 
+![img](challenge30.PNG)
