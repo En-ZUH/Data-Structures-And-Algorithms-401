@@ -1,5 +1,5 @@
 'use strict';
-const { HashTable } = require('../../hashTable');
+const { HashTable } = require('../hashTable');
 
 describe('HashTable', () => {
 
