@@ -11,7 +11,7 @@ describe('Repeated Word', () => {
     });
     it('Should successfully return first repeated word', () => {
 
-        let test = 'you are smart, you are kind, you are important!';
+        let test = 'You are smart, you are kind, you are important!';
 
         expect(findRepeated(test)).toEqual('you');
     });
