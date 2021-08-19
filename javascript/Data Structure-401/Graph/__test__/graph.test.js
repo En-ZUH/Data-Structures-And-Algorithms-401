@@ -1,8 +1,8 @@
 'use strict';
 
-const Graph = require('../../graph').Graph;
-const Vertex = require('../../graph').Vertex;
-const Edge = require('../../graph').Edge;
+const Graph = require('../graph').Graph;
+const Vertex = require('../graph').Vertex;
+const Edge = require('../graph').Edge;
 
 
 describe('Testing Graph Implementation', () => {
