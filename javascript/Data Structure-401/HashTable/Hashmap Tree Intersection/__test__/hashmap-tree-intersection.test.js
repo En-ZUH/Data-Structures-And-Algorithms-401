@@ -88,7 +88,7 @@ describe('Testing of Hashmap tree Intersection', () => {
     });
 
 
-    it(' Successfully return a set of values found in both trees', () => {
+    it('Successfully return a set of values found in both trees', () => {
         expect(treeIntersection(tree_1, tree_2)).toEqual([100, 160, 125, 175, 200, 350, 500]);
     });
     it('Successfully return a set of values found in both trees', () => {
